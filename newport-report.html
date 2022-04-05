@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Newport Beach Surf Report
+    </title>
+    <link rel = "stylesheet" text = "text/css" href = "newport-report.css">
+</head>
+<body>
+    <h1>WaveCheck</h1>
+    <div class = "logo">
+        <img src = "Logo.jpg" alt = "WaveCheck logo">
+    </div>
+    <hr>
+    <h2>Newport Beach Pier Surf Report</h2>
+    <div class = "nearby">
+        <button class = "dropdown"><a href = "">Nearby Spots <span>&#9660;</span></a></button>
+        <div class = "dropdown-content">
+            <a href = "36.html">36th Street</a>
+            <a href = "54.html">54th Street</a>
+            <a href = "jetties.html">River Jetties</a>
+        </div>
+    </div>
+    <h3>Surf Reports From Today</h3>
+    <div class = "date">
+    <div id = "current_date"></p>
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+    </script>
+    </div>
+</html>
